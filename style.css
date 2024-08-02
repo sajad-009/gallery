@@ -1,0 +1,108 @@
+.navbar{
+    justify-content: space-around;
+}
+#navbarSupportedContent{
+    justify-content: space-between;
+}
+#Login{
+    position: fixed;
+    top: 10px;
+    left: 450px;
+    z-index: 1200;
+}
+.modal-header{
+    justify-content: space-around;
+}
+.carousel-inner{
+    height: 800px;
+}
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+.carousel-inner .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.text-shadow{
+    text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.719), 3px 3px 5px rgba(0, 0, 0, 0.719);
+}
+.h-400{
+    height: 400px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-template-areas: 
+    'item-1 item-1 item-4'
+    'item-2 item-5 item-5'
+    'item-2 item-5 item-5'
+    'item-3 item-3 item-3'
+    ;
+    gap: 1.5rem;
+}
+.item-1{
+    grid-area: item-1;
+}
+.item-2{
+    grid-area: item-2;
+}
+.item-3{
+    grid-area: item-3;
+}
+.item-4{
+    grid-area: item-4;
+}
+.item-5{
+    grid-area: item-5;
+}
+.section-content{
+    height: 350px;
+}
+.col{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.anime-cover{
+    overflow: hidden;
+}
+.anime-info{
+    padding: 35px;
+    color: #FFF;
+    background-color: #000000c4;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.344, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -300px;
+}
+.post:hover .anime-info{
+    bottom: 0;
+}
+.score{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    align-items: center;
+}
+.score .circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+::-webkit-scrollbar{
+    background-color: #13151d98;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ebebeb50;
+    border-radius: 20px;
+}
+@media screen and (max-width: 400px) {
+    .carousel-inner{
+        height: 250px;
+    }
+}
